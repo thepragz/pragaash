@@ -7,8 +7,12 @@
 
 
 <style type="text/css">
+tr:nth-child(even) {
+    background: grey;
+}
 
 @import url('https://fonts.googleapis.com/css?family=BioRhyme|Pacifico');
+
 
 	
 		h1 {
@@ -46,6 +50,9 @@
 		a:visited{
 			color: red;
 		}
+
+		th {background-color: lightgreen ; color: blue; font-size: 30px; font-family: 'Pacifico', cursive;"}
+		}
 </style>
 
 	
@@ -55,28 +62,52 @@
 	<h1>H1</h1>
 	<h2>H2</h2>
 	<p>sample text here <a href="http://google.com"> Google</a></p>
+	<br><br>
 </body>
 
 
-	<table border="1" style="text-align: center;
-	background-color: gray;
+	<table border="0" style="text-align: center;
+	background-color: #ffcccc;
 	color: white;
-	"> 
-			<th>Name</th>
-			<th>Age</th>
-			<th>Country</th>
-			<th>example</th>
+	"> 	
+		<tr>
+			<th width="200">Name</th>
+			<th width="200">Age</th>
+			<th width="200">Country</th>
+			
+
+		</tr>
 		<tr>
 			<td>Pragash</td>
 			<td>26 years old</td>
 			<td>Malaysia</td>
-			<td width="50"></td>
-		</tr>
+					</tr>
 		<tr>
 			<td>Joe</td>
 			<td>25 years old</td>
 			<td>Singapore</td>
-			<td width="50"></td>
+			
 		</tr>
+			<tr>
+			<td>sop</td>
+			<td>32 years old</td>
+			<td>Indonesia</td>
+			
+			</tr>
+
+			<tr>
+			<td>abc</td>
+			<td>12 years old</td>
+			<td>anywhere</td>
+			
+
+			<tr>
+			<td>posad</td>
+			<td>37 years old</td>
+			<td>lasdihs</td>
+			
+
+
 	</table>
+
 </html>
