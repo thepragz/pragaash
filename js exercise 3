@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS 3</title>
+	<meta charset="utf-8">
+	
+<input type="button" onclick="level()" value="Exam">
+
+<script type="text/javascript">
+	
+	function level(){
+		
+		var scores= [24,32,17];
+		var arrayLenght=scores.length;
+		var roundNumber=0;
+		var msg= "";
+
+		for (var i = 0; i<arrayLenght; i++)
+		{
+
+		roundNumber=(i+1);
+
+		msg +='Round ' + roundNumber +': ';
+
+		msg += scores[i] + '\n';
+
+		
+		
+
+		} 
+
+ console.log(msg)
+
+	}
+
+	
+	
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS 20/5</title>
+	<meta charset="utf-8">
+	
+<input type="button" onclick="getSize2()" value="Hello"><br><br><br>
+<input type="button" onclick="getSizeArea()" value="area"><br><br><br>
+<input type="button" onclick="getSizeVolume()" value="volume"><br><br>
+
+
+<script type="text/javascript">
+	
+function getSize(width,height,depth) {
+
+	var area = width * height;
+	var volume = width*height*depth;
+	var sizes = [area,volume];
+
+	return sizes;
+}
+
+function getSize2(){
+
+	var size = getSize (5,6,7);
+	var area = size[0];
+	var volume = size[1];
+
+console.log('area ' + area)
+console.log( 'volume ' + volume)
+console.log('size ' + size)
+
+}
+
+function getSizeArea(){
+
+	var size = getSize (5,6,7);
+	var area = size[0];
+	var volume = size[1];
+
+console.log('area ' + area)
+}
+ 
+ function getSizeVolume(){
+
+	var size = getSize (5,6,7);
+	var area = size[0];
+	var volume = size[1];
+
+console.log( 'volume ' + volume)
+}
+
+function getSizeVolume(){
+
+	var size = getSize (5,6,7);
+	var area = size[0];
+	var volume = size[1];
+
+console.log( 'volume ' + volume)
+}
+
+
+	
+
+	
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
