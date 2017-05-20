@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS /10/20/5</title>
+	<meta charset="utf-8">
+	
+<script type="text/javascript">
+	
+	function Hotel(name,rooms,booked) {
+
+		this.name=name;
+		this.rooms=rooms;
+		this.booked=booked;
+		this.checkAvailability = function() {
+			return this.rooms- this.booked;
+		};
+
+	}
+
+	var hotel= new Hotel("Hilton",50,10);
+	console.log(hotel);
+	console.log("Hotel: " + hotel.name + " available rooms: "+ hotel.checkAvailability());
+
+	var hotel2= new Hotel("Swiss",100,66);
+	console.log(hotel2);
+	console.log("Hotel: " + hotel2.name + " available rooms: "+ hotel2.checkAvailability());
+
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
