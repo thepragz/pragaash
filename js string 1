@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Document Object model</title>
+	<meta charset="utf-8">
+	
+<script type="text/javascript">
+	//1
+	var str = "Asia Developer Academy"
+	var length = str.length;
+
+console.log(str.length)
+
+//2
+	var str = "Asia Developer Academy";
+	var res = str.toUpperCase();
+
+console.log(str.toUpperCase());
+
+//3
+	var str = "Asia Developer Academy";
+	var res = str.toLowerCase();
+
+console.log(str.toLowerCase());
+
+//4
+
+	var str = "Asia Developer Academy";
+	var res = str.replace('e','')
+	.replace('e','')
+	.replace('e','')
+	.replace('e','')
+	.replace('e','');
+
+
+console.log(res)
+
+//5
+
+	var res= str.indexOf('ev')
+
+console.log(res)
+
+//6
+
+	var res= str.indexOf('e',15)
+
+console.log(res)
+
+//7
+
+	
+	var res4= str.substring(0,4)
+	var res5= str.substring(15,22)
+
+
+	console.log( res4 + " "+  res5)
+
+
+
+
+	
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
