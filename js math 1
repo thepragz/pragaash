@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Document Object model</title>
+	<meta charset="utf-8">
+	
+<script type="text/javascript">
+
+
+//Math.random();
+
+function getRndInterger(min, max) {
+
+	return Math.floor(Math.random()*(max -min +1)) + min;
+	
+}
+
+
+
+
+
+	console.log(getRndInterger(1,100));
+
+
+
+
+
+	
+
+
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
