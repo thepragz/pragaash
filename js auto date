@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> footer year </title>
+	<meta charset="utf-8">
+	
+<script type="text/javascript">
+
+	var d=new Date();
+    yr=d.getFullYear();
+    if (yr!=2016);
+
+
+    document.write(""+yr);
+
+
+
+
+
+
+
+	
+
+
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
