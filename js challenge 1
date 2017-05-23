@@ -5,10 +5,17 @@
 	<meta charset="utf-8">
 </head>
 <body>
+
+<h1 id='greetings'> Selamat</h1>
+<p id='this'>aipshdaosdkasd</p>
+
  <script type="text/javascript">
  	
+	//1
 	var d = new Date();
 	var time= d.getHours();
+
+	var x 
 
 	if (time <12) {
 		document.write(" Good Morning")
@@ -26,8 +33,13 @@
 		document.write(" Good Night")
 	} 
 	 
+ document.getElementById('this').innerHTML =h1;
+
+ 	var 
 
  </script>
+
+
 
 </body>
 </html>
