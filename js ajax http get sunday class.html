@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>api get 22</title>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript"> post()
+		function post(){
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status ==200){
+					//document.getElementById('sample').innerHTML = this.responseText;
+				var json=JSON.parse(this.responseText);
+
+				for (var i = 0; i < json.length; i++) {
+					document.getElementById("usertable").innerHTML += "<tr><td>" + json[i].openingTimes + " " +json[i].facilities + "</td><td>" + json[i].address + "</td></tr>";
+				}
+}
+			};
+
+			
+			xhttp.open("GET", "http://mighty-hollows-31954.herokuapp.com/api/places", true);
+			xhttp.send();
+			
+
+		}
+		
+	</script>
+</head>
+
+<body>
+<h1>time</h1>
+<table border="1" id="usertable">
+	<tr><th>time</th><th>where</th></tr>
+</table>
+
+</body>
+</html>

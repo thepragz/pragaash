@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js oOP challenge 4</title>
+</head>
+<script type="text/javascript">
+
+
+// 	 var books = {
+// 	 	title:"Html basic",
+// 	 	author: " MR html 1",
+// 	 	pages: 123,
+
+// 	 	read: function(){
+// 	 		 this.pages++
+// 	 		return this.pages
+
+// 	 	},
+// 	 	buy : function(){
+// 	 		return this.title + " by" + this.author + " has been purchased!"
+// 	 	},
+
+
+// 	 }
+// console.log(books.read())
+// console.log(books.buy())
+
+//  	var books = {
+// 	 	title:" javascript basic",
+// 	 	author: " MR Javas",
+// 	 	pages: 222,
+
+// 	 	read: function(){
+// 	 		 this.pages++
+// 	 		return this.pages
+
+// 	 	},
+// 	 	buy : function(){
+// 	 		return this.title + " by" + this.author + " has been purchased!"
+// 	 	},
+
+
+// 	 }
+// console.log(books.read())
+// console.log(books.buy())
+
+//  	var books = {
+// 	 	title:"Hey CSS",
+// 	 	author: " MR css 2",
+// 	 	pages: 50,
+
+// 	 	read: function(){
+// 	 		 this.pages++
+// 	 		return this.pages
+
+// 	 	},
+// 	 	buy : function(){
+// 	 		return this.title + " by" + this.author + " has been purchased!"
+// 	 	},
+
+
+// 	 }
+// console.log(books.read())
+// console.log(books.buy())
+
+function books(title,author,pages){
+	this.title= title;
+	this.author= author;
+	this.pages= pages;
+	this.read= function(){
+	 		 this.pages++
+	 		return this.pages
+
+	 	};
+	 	this.buy= function(){
+	 		return this.title + " by" + this.author + " has been purchased!"
+	 	};
+}
+
+	var booksType= new books("abc"," mr abc",100);
+	console.log(booksType.read());
+	console.log(booksType.buy());
+	
+	var booksType2= new books("xyx"," mr zzz",1222);
+	console.log(booksType2.read());
+	console.log(booksType2.buy());
+
+
+</script>
+<body>
+
+</body>
+</html>

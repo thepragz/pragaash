@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery traversing :filter</title>
+	<meta charset="utf-8">
+	<script src="jquery-3.2.1.min.js"></script>
+	<style type="text/css">
+		.selected{
+			color: red
+		}
+
+		#div1 {
+			
+			background-color: red;
+			width:300px;
+			height: 100px;
+		}
+		
+		#div2 {
+			background-color: yellow;
+			width:300px;
+			height: 100px;
+		}
+
+		#div3 {
+			background-color: green;
+			width:300px;
+			height: 100px;
+		}
+
+		
+	</style>
+</head>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("li").eq(2).addClass("selected");
+
+		$("p").find("span").addClass("selected");
+	
+
+		$("li").filter("middle").addClass("selected");
+		
+		$("#div2").fadeOut(1000).delay(500).fadeIn(1000);
+
+		// //$("#hide").click(function(){
+		// $("p").hide();
+		
+		// });
+
+		$("#show").click(function(){
+		$("p").show();
+		
+		});
+
+		$("#hide").click(function(){
+			$("p").hide(1000,function(){
+				alert("The paragraph is now hidden");
+			});
+		});
+
+		$("#toggle").click(function(){
+			$("#div1").fadeToggle();
+			$("#div2").fadeToggle("slow");
+			$("#div3").fadeToggle(3000);
+		});
+
+		$("#div1").hover(function(){
+			var div= $("#div1");
+			div.animate({left:'100px'},"slow");
+			div.animate({fontSize:'3em'},"slow");
+		});
+
+	});
+</script>
+
+<body>
+
+<div>
+	<ul>
+		<li class = "top">List item 1</li>
+		<li class = "top">List item 2</li>
+		<li class = "middle">List item 3</li>
+		<li class = "middle">List item 4</li>
+		<li class = "bottom">List item 5</li>
+		<li class = "bottom">List item 6</li>
+	</ul>
+</div>
+
+
+
+<p>This is 1st paragraph and <span>THIS IS RED</span></p>
+<p>This is 2nd paragraph and <span>THIS IS ALSO RED</span></p>
+
+
+
+<button id="hide">Hide me</button>
+<button id="show"> Show me</button>
+<br>
+<br>
+<br>
+<div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center>
+	<button id="toggle">toggle this box!</button><br><br>
+</center>
+<center>
+<div id="div1">
+	this is box 1
+</div><br><br>
+<div id="div2">
+	this is box 2
+</div><br><br>
+<div id="div3">
+	this is box 3
+</div>
+</center>
+
+</body>
+</html>

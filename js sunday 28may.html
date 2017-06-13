@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js sunday 28/5</title>
+	<meta charset="utf-8"></meta>	
+</head>
+<body>
+<br><br>
+		<input id="testNumbers">
+<br>
+<p>Click the button to display the lowest value, highest value and average.</p>
+
+		<button onclick="submit()">Click Me!</button>
+
+<p>The maximum number is:<br><p id="maximum"></p>
+<p>The lowest number is:<br><p id="minimum"></p>
+<p>The average number is:<br><p id=""></p>
+
+
+
+<script type="text/javascript">
+
+function submit() {
+    //var str = "testNumbers"
+    var x = document.getElementById("testNumbers").value;
+    var split = x.split(",")
+        var r= split.map(Number);
+
+
+    document.getElementById("maximum").innerHTML = r;
+    //document.getElementById("minimum").innerHTML = ;
+		minMaxAvg(r)
+
+    
+}
+
+		
+function minMaxAvg(arr) {
+
+	var max = arr[0];
+	var min = arr[0];
+	var sum = arr[0];
+
+
+	for (var i = 1; i<arr.length; i++)
+	{
+		if (arr[i] > max) {
+			max= arr[i];
+		}
+
+		if (arr[i] > max) {
+			min = arr[i];
+		}
+
+		sum = sum + arr[i];
+	} 
+
+	var avg = sum / arr.length;
+
+console.log('minimum ' +  min)
+console.log( 'maximum ' + max)
+console.log('average ' + avg)
+
+	return [ max, min, avg];
+
+
+
+}
+
+
+	
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

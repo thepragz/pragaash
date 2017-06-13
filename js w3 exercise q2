@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS 3</title>
+	<meta charset="utf-8">
+	
+<script type="text/javascript">
+	
+	    // var points = new Array(100);
+     //    for (var i = 0; i < 100; i++) {
+     //        points[i] = i + 1; 
+     //    }
+
+     //    for (var i = 0; i < points.length; i++) {
+     //        //console.log(points[i]); //This prints the values that you stored in the array
+     //    }
+for (i=1; i<=100; i++)
+if (i%15===0)
+{
+console.log("FizzBuzz");
+}
+else if (i%3===0)
+{
+console.log("Fizz");
+}
+else if (i%5===0)
+{
+console.log("Buzz");
+}
+else
+{
+	console.log(i);
+
+}
+
+
+	// for(var i='';i<=7;i++){
+ //       var a='';
+ //      for(var j=1;j<=i;j++){
+ //         var a=a+''+"#";
+
+ //      }
+
+ //       console.log(a);
+ //    }
+
+</script>
+
+	
+
+</head>
+<body>
+
+</body>
+</html>

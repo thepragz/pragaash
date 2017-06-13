@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome</title>
+	<style type="text/css">
+		p{margin: 20px;}
+	</style>
+
+</head>
+
+<body>
+<h2>Palindrome Checking Function</h2>
+
+<script type="text/javascript">
+	
+	function palindrome(mystring){
+		var removeChar = mystring.replace(/[^A-Z0-9]/ig,"").toLowerCase();
+		var checkPalindrome= removeChar.split('').reverse().join('');
+		if(removeChar === checkPalindrome){
+			document.write("<p>"+ mystring + " is a palindrome </p>");
+
+		}
+		else{
+			document.write("<p>"+ mystring + " is not a palindrome </p>");
+
+		}
+	}
+
+	palindrome('"Madam"')
+	palindrome('"Kayak"')
+	palindrome('"BAC"')
+
+
+
+</script>
+
+
+</body>
+</html>

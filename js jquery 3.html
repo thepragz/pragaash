@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX</title>
+<script src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$.getJSON("https://sheetsu.com/apis/v1.0/f7b7d0f66d1d", function(json,status){
+			for (i = 0; i < json.length; i++) {
+				document.getElementById("usertable").innerHTML += "<tr><td>" + json[i].firstName + " " +json[i].lastName + "</td><td>" + json[i].email + "</td></tr>";
+			}
+		})
+		
+	})
+	
+</script>
+	
+		
+	</script>
+</head>
+	
+<body>
+<H1>Users</H1>
+	<table border="1" id="usertable">
+		<tr><th>Name</th><th>Email</th></tr>
+		
+	</table>
+
+
+</body>
+</html>

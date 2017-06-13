@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime factors</title>
+	<meta charset="utf-8" lang="en">
+	
+</head>
+<body>
+<h1> Find Prime factors of any number</h1>
+<input id="randomNumber">
+
+<button id="find" onclick="findFactor()">Submit</button>
+
+<!-- <button id="clear">Clear</button> -->
+
+
+<br><br>
+Factors: 
+<br><br>
+<p id="result"></p>
+
+
+<script type="text/javascript">
+		
+			var output = document.getElementById('result')
+			var input = document.getElementById('randomNumber')
+			var find = document.getElementById('find')
+
+			function getAllFactorsFor(remainder){
+				var factors = [],i
+
+				for ( i=2; i <= remainder; i++){
+					while ((remainder % i) ===0){
+						factors.push(i);
+						remainder /= i;
+					}
+				}
+				return factors;
+			}
+
+			 	function findFactor() {
+			 		
+			 		var val = +(input.value)
+
+			 		if (isNaN(val)){
+			 			return;
+			 		}
+			 		
+			 		output.innerHTML= getAllFactorsFor(val).join(', ')
+			 	}
+
+	
+	</script>
+</body>
+</html>

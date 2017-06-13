@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chess board</title>
+</head>
+<script type="text/javascript">	
+var size= 9;
+
+var board="";
+
+for (var y=0; y<size; y++){
+	for (var x=0; x<size; x++) {
+		if ((x+y) % 2 == 0)
+			board += "#";
+		else
+			board += " "
+	}
+	board += "\n";
+}
+	console.log(board);
+</script>
+<body>
+
+</body>
+</html>

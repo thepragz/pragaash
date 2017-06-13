@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>My CV</title>
+
+
+<head>
+  <meta http-equiv="refresh" content="10">
+</head>
+<!-- style>
+
+h1 {
+	color:white;
+	background-color: black;
+}
+h2 {
+	color: black;
+}
+
+body {
+	background-image: url(http://cdn.wallpapersafari.com/20/9/2ksrGJ.jpg);
+}
+</style> -->
+<script type="text/javascript">
+loadDoc();
+		function loadDoc(){
+			var xhttp = new XMLHttpRequest();
+
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status ==200){
+					var json= JSON.parse(this.responseText);
+					document.getElementById("name").innerHTML = "Name: " + json.results[0].name.first+ " "+ json.results[0].name.last;//First name & last name
+
+					//DOB
+					
+					document.getElementById("email").innerHTML = "<br> Email: " + json.results[0].email;
+					
+			
+					
+					document.getElementById("picture").innerHTML += "<br>" + '<img src="' + json.results[0].picture.large + '"/>'
+					
+
+					}
+
+			};
+
+			xhttp.open("GET", "https://www.randomuser.me/api", true);
+			xhttp.send();
+
+		}
+	</script>
+</head>
+<body>
+
+
+ 
+
+
+	<h1>About ME</h1>
+	
+	<div id="picture"> </div>
+	<hr> <hr>
+	<p>My <span id="name"></span></p>
+	
+	<p> My <span id="email"></span></p>
+	<!-- <h2>Experiences</h2><hr>
+	<ul>
+		<li>Testing <em>2016-present</em></li>
+		<li>E-commerce dev <em>2015-2017</em></li>
+	</ul>
+
+	<h2>Skills</h2><hr>
+	<ol>
+		<li>Html and Css <a href="google.com">My first website</a></li>
+		<li>Basics IT management skills</li>
+	</ol>
+	<h2>Education</h2><hr>
+	<ul>
+		<li>Dip. Business UTM</li>
+		<li>Asia developer Acedemy</li>
+	</ul> -->
+</body>

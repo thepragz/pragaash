@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>guess the number</title>
+</head>
+<script type="text/javascript">	
+	var randomNumber = Math.floor(Math.random() * 100) + 1;
+
+	
+	
+	var counter= 0;
+		
+		
+
+
+function generate() {
+	
+
+
+
+ 	var numberInput= document.getElementById("numberInput").value
+
+ 	if (numberInput<randomNumber){
+ 		reply="The number is low!!"
+ 	}
+ 	else
+ 		if (numberInput>randomNumber){
+ 			reply="The number is too High!! "
+ 		}
+ 		else
+ 		{
+ 			reply= "Congratulations on guessing the number"
+ 		}
+
+ 		counter++
+ 	if (counter>=3){
+			document.getElementById("button").disabled = true
+			
+		}
+
+		document.getElementById("reply").innerHTML += randomNumber
+ 	
+
+ 	document.getElementById("reply").innerHTML=reply
+ 	console.log(randomNumber)
+ 	console.log(counter)
+}
+
+</script>
+<body>
+<br>
+<header>Guess the number!</header><br>
+<br><h1>Enter the number</h1>
+<input id="numberInput" type="number" name="Enter the number">
+<button id="button" onclick="generate()">Click me!</button>
+<br><br>
+<p id="reply"></p>
+
+
+</body>
+</html>

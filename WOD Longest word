@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Longest word</title>
+</head>
+<body>
+
+<!-- <input type="text" id="wordsEntered" placeholder="Enter words here" style="width: 600px">
+<br><br>
+<button id="count">Count the Longest Word!</button>
+<br><br>
+<p id="answer"> characters</p>
+ -->
+<script type="text/javascript">
+	
+	var wordsLength = 0;
+	var samplewords = "In the language is inside"
+
+	
+	 
+	 var wordsArray = samplewords.split(" ")
+
+	 for (var i = 0; i < wordsArray.length; i++) {
+	 	
+	 	 if (wordsArray[i].length > wordsLength) {
+	 	 	wordsLength = wordsArray[i].length
+	 	
+
+	 }
+	 } 
+	
+	 
+
+
+
+	console.log(wordsLength + " characters");
+	console.log(wordsArray)
+	console.log()
+	
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
