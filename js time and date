@@ -7,10 +7,15 @@
 <script type="text/javascript">
 
 	var today = new Date();
+
 	var year = today.getFullYear();
+
 	var firstClass= new Date('May 13,2017 09:00:00');
+
 	var difference = today.getTime()-firstClass.getTime();
+
 	var differenceInDays= difference/86400000;
+
 	var msg= Math.floor(differenceInDays) + ' Days Since we start coding! ';
 
 	document.write(msg)
