@@ -422,8 +422,8 @@ there.
   margin-top: 25%
   border-style: solid;
   text-align: center;
-  background-color: grey;
-  opacity: 0.9;
+  background-color: white;
+  opacity: 0.8;
   shape-rendering: optimizeSpeed;
  
   
@@ -431,7 +431,38 @@ there.
 
 .three {
   margin: auto;
-  margin-top: 25%
+  margin-top: 10%;
+  margin-bottom: 10%;
 
+
+}
+
+nav{
+  background-color: orange;
+  padding: 2px;
+  text-align: center;
+
+}
+
+li{
+  display: inline;
+  font-size: 15px;
+  font-family: helvetica,Sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+header {
+  background-color: white;
+  text-align: center;
+}
+
+footer{
+  background-color: #987dd4;
+  clear: all;
+  padding: 1px;
+  position: relative;
+  text-align: center;
 
 }
