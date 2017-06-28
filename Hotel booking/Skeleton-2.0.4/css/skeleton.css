@@ -441,6 +441,7 @@ nav{
   background-color: orange;
   padding: 2px;
   text-align: center;
+  margin-top: 3px
 
 }
 
@@ -450,6 +451,7 @@ li{
   font-family: helvetica,Sans-serif;
   margin-left: 10px;
   margin-right: 10px;
+
 
 }
 
@@ -464,5 +466,6 @@ footer{
   padding: 1px;
   position: relative;
   text-align: center;
+  
 
 }
